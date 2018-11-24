@@ -84,7 +84,7 @@ var Accordion = function(options) {
         // the content was updated dynamically
         var height = el.scrollHeight;
 
-        if (el.style.height === '0px' || el.style.height === '') {
+        if (el.clientHeight === 0) {
             el.style.height = height + 'px';
         } else {
             el.style.height = 0;
